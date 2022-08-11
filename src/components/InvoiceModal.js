@@ -27,8 +27,6 @@ function GenerateInvoice() {
   });
 }
 
-
-
 class InvoiceModal extends React.Component {
   constructor(props) {
     super(props);
@@ -41,7 +39,7 @@ class InvoiceModal extends React.Component {
           // ref={componentRef}
           show={this.props.showModal}
           onHide={this.props.closeModal}
-          size="md"
+          size="sm"
           centered
         >
           <div id="invoiceCapture">
@@ -76,8 +74,8 @@ class InvoiceModal extends React.Component {
                   <div>{this.props.info.billFromAddress||''}</div>
                   <div>{this.props.info.billFromEmail||''}</div>
                 </Col> */}
-                <Col md={4}>
-                  <div className="fw-bold mt-2">Date Of Issue:</div>
+                <Col md={5}>
+                  <div className="fw-bold mt-2">Date of Issue:</div>
                   <span className="current-date">
                     {new Date().toLocaleDateString()}
                   </span>
