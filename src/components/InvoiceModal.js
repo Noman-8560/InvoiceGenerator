@@ -27,6 +27,7 @@ function GenerateInvoice() {
   });
 }
 
+
 class InvoiceModal extends React.Component {
   constructor(props) {
     super(props);
@@ -39,7 +40,7 @@ class InvoiceModal extends React.Component {
           // ref={componentRef}
           show={this.props.showModal}
           onHide={this.props.closeModal}
-          size="sm"
+          size="md"
           centered
         >
           <div id="invoiceCapture">
